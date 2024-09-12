@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/11-to-do-list.css">
+    <script src="js-script/11-to-do-list.js" defer></script>
+</head>
+<body>
+    <h1 class="header">Todo List</h1>
+    <div class="input-container">
+        <input placeholder="What are in your mind?" class="js-input todo-input" onkeydown="handelInputKeyDown(event);">
+        <input type="date" class="js-date todo-date">
+    </div>
+    <div class="button-container">
+        <button class="add-button" onclick="addTodo();">
+            Add
+        </button>
+        <button class="reset-button" onclick="resetTodoList();">
+            Reset
+        </button>
+    </div>
+    <div class="js-todo-list todo-list"></div>
+</body>
+</html>
